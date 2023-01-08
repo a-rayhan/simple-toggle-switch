@@ -20,7 +20,7 @@ body {
   background-color: var(--body-color);
 }
 
-
+/*========== Toggle ==========*/
 .toggle__content{
   display: grid;
   row-gap: 1.5rem;
