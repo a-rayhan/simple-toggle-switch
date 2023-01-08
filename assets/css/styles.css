@@ -63,7 +63,7 @@ body {
   position: absolute;
   width: 32px;
   height: 32px;
-  background-color: lime;
+  background-color: var(--body-color);
   border-radius: 50%;
   left: -4px;
   top: 0;
@@ -73,3 +73,11 @@ body {
 }
 
 /* Toggle animation effects */
+.toggle__check:checked ~ .toggle__rail .toggle__circle {
+  transform: translateX(28px);
+  box-shadow: inset 0 0 0 12px var(--active-color);
+}
+
+.toggle__check:checked ~ .toggle__rail .toggle__border {
+  transform: translateX(28px);
+}
